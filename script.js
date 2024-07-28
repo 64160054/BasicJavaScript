@@ -21,3 +21,13 @@ var FirstName = "Paowaric";
 var LastName = "Vachiranantakul";
 var FullName = FirstName + " " + LastName;
 console.log(FullName);
+
+//True
+console.log(1==1);
+
+//Function
+function myFunction(value1, value2) {
+    return value1*value2;
+}
+
+console.log(myFunction(5, 5));
