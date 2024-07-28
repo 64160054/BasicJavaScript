@@ -32,4 +32,27 @@
 
 // console.log(myFunction(5, 5));
 
-test
+// ! style background 
+// function changeBg() {
+//     document.body.style.backgroundColor = "red";
+// }
+
+// ! program Celsius => F
+// function cToF(celsius) {
+//     var cTemp = celsius;
+//     var cToFahr = cTemp * 9 / 5 + 32;
+//     var message = cTemp + "\xB0C is " + cToFahr + "\xB0F";
+//     console.log(message); 
+// }
+
+// cToF(30);
+
+// ! program F => C
+// function fToC(fahrenheit) {
+//     var fTemp = fahrenheit;
+//     var fToCel = (fTemp - 32) * 5 / 9;
+//     var message = fTemp + "\xB0F is " + fToCel + "\xB0C";
+//     console.log(message); 
+// }
+
+// fToC(86);
