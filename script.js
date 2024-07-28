@@ -8,10 +8,16 @@ document.getElementById('text').innerHTML = "Paowaric Vachiranantakul"
 document.write('Hello Document Write'); 
 
 // ขึ้น Pop up กล่อง Alert ตอนเข้า test
-window.alert('Hello Alert Box'); 
+// window.alert('Hello Alert Box'); 
 
 //สร้างตัวแปร var เสมอ 
 var x = 5; 
 var y = 6;
 var z = x + y;
 console.log(z);
+
+//Concatenate การเชื่อมต่อ String หรือ Variable
+var FirstName = "Paowaric";
+var LastName = "Vachiranantakul";
+var FullName = FirstName + " " + LastName;
+console.log(FullName);
