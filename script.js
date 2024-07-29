@@ -159,11 +159,22 @@
 // }
 
 // ! for in loop
-var person = {
-    fName: "Paowaric",
-    lName: "Vachiranantakul",
-    age: 21,
-};
-for(var x in person) {
-    console.log(person[x]);
-}
+// var person = {
+//     fName: "Paowaric",
+//     lName: "Vachiranantakul",
+//     age: 21,
+// };
+// for(var x in person) {
+//     console.log(person[x]);
+// }
+
+// ! for of loop (loop ผ่าน obj)
+// var cars = ["BMW", "Ford", "Honda", "Audi"];
+// for(var x of cars) {
+//     console.log(x);
+// }
+// var myString = "JavaScript";
+// var y;
+// for(y of myString){
+//     console.log(y);
+// }
