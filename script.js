@@ -210,3 +210,7 @@
 // //? } กลาบเป็นด้านล่าง
 // var hello = () => "Hello World";
 // console.log(hello());
+
+// ! arrow function with parameter
+var hello = (value) => "Hello " + value; //? ถ้ามี parameter แค่ตัวเดียวสามารถลบ () ตรง value ออกได้เลย
+console.log(hello("Pao"));
