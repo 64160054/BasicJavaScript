@@ -178,3 +178,20 @@
 // for(y of myString){
 //     console.log(y);
 // }
+
+// ! Hoisting
+// x = 5;
+// console.log(x);
+// var x; // ? declaration จะขึ้นไปห้อยด้านบนได้ (Hoisted)
+// var y = 10; // ? Initialization จะไม่ขึ้นไปห้อยด้านบน (Not Hoisted)
+
+// ! var & let & const 
+// var x = 0;
+// var x = 1;
+// console.log(x);
+// let y = 2;
+// y = 3;
+// console.log(y); //? ประกาศ let ซ้ำไม่ได้
+// const z = 4;
+// z = 5;
+// console.log(z); //? error ต้องเอา (z = 5;) ออก เพราะ const คือค่าคงที่ ประกาศได้แค่ครั้งเดียว
