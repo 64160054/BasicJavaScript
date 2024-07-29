@@ -79,3 +79,14 @@
 // var myArr = ["BMW", "Ford", "Honda"];
 
 // console.log(myArr[0]);
+
+// ! Array Methods
+// var fruits = ["Banana", "Orange", "Apple", "Mango"];
+// document.getElementById("demo").innerHTML = fruits.toString();
+// document.getElementById("demo").innerHTML = fruits.join(" - ");
+// fruits.shift();           //? ลบหน้าสุด
+// fruits.unshift("Lemon"); //? เพิ่มหน้าสุด
+// fruits.pop();            //? ลบหลังสุด
+// fruits.push("Kiwi");     //? เพิ่มหลังสุด
+// fruits[0] = "Pine";      //? แทนที่ตัว index 0 ด้วย Pine
+// console.log(fruits);
