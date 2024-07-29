@@ -216,17 +216,39 @@
 // console.log(hello("Pao"));
 
 // ! JS Class
-class myClass {
-    constructor(name) {
-        this.myname = name;
+// class myClass {
+//     constructor(name) {
+//         this.myname = name;
+//     }
+//     fullName(greeting) { 
+//         return greeting + " " + "My name is " + this.myname;
+//     }
+//     static hello(name) { //? static ต้องใช้ชื่อ class เพื่อเรียกใช้โดยตรง (Line 232)
+//         return "Hello! " + name;
+//     }
+// }
+// var person = new myClass("Pao");
+// console.log(person.fullName("Hi,"));
+// console.log(myClass.hello("Paowaric"));
+
+// ! JS inheritance (การสืบทอดระหว่าง class)
+class Car {
+    constructor(brand) {
+        this.carname = brand;
     }
-    fullName(greeting) { 
-        return greeting + " " + "My name is " + this.myname;
-    }
-    static hello(name) { //? static ต้องใช้ชื่อ class เพื่อเรียกใช้โดยตรง (line 232)
-        return "Hello! " + name;
+    present() {
+        return "I have a " + this.carname;
     }
 }
-var person = new myClass("Pao");
-console.log(person.fullName("Hi,"));
-console.log(myClass.hello("Paowaric"));
+
+class Model extends Car {
+    constructor(brand, model) {
+        super(brand); //? super คือกา่รเรียก method constructor จาก class แม่ (Line 236) ซึ่งสามารถใช้ present() ได้เหมือนกัน
+        this.model = model;
+    }
+    show() {
+        return this.present() + ", it's a " + this.model;
+    }
+}
+var myCar = new Model("Ford", "Mustang");
+console.log(myCar.show());
