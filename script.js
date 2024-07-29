@@ -44,7 +44,6 @@
 //     var message = cTemp + "\xB0C is " + cToFahr + "\xB0F";
 //     console.log(message); 
 // }
-
 // cToF(30);
 
 // ! program F => C
@@ -54,5 +53,17 @@
 //     var message = fTemp + "\xB0F is " + fToCel + "\xB0C";
 //     console.log(message); 
 // }
-
 // fToC(86);
+
+// ! create Obj & use
+// TODO create method at fullname
+var person = {
+    firstName: "Paowaric",
+    lastName: "Vachiranantakul",
+    eyecolor: "black",
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+};
+
+console.log(person.fullName());
