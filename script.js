@@ -84,9 +84,19 @@
 // var fruits = ["Banana", "Orange", "Apple", "Mango"];
 // document.getElementById("demo").innerHTML = fruits.toString();
 // document.getElementById("demo").innerHTML = fruits.join(" - ");
+// fruits.splice(2, 0, "Test1", "Test2"); //? เพิ่มตรง index ที่ 2 ว่า Test1 และ Test2 และไม่ต้องลบอะไรเลย (0) 
+// fruits.splice(0, 3); //? ลบตรง index ที่ 0 เป็นต้นไป 3 ตัว ก็คือลบ Banana ถึง Apple
 // fruits.shift();           //? ลบหน้าสุด
 // fruits.unshift("Lemon"); //? เพิ่มหน้าสุด
 // fruits.pop();            //? ลบหลังสุด
 // fruits.push("Kiwi");     //? เพิ่มหลังสุด
 // fruits[0] = "Pine";      //? แทนที่ตัว index 0 ด้วย Pine
 // console.log(fruits);
+
+// ! Array slice
+var arr1 = ["value1", "value2"];
+var arr2 = ["value3", "value4", "value5"];
+var arr3 = ["value6", "value7"];
+var arr4 = ["value1", "value2", "value3", "value4", "value5"]
+var concatArr = arr1.concat(arr2, arr3); //? concat มีไว้รวม
+var myNewArr = arr4.slice(1, 3); //? เอาตั้งแต่ Index ที่ 1 ถึง 2
