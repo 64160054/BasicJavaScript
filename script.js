@@ -94,9 +94,19 @@
 // console.log(fruits);
 
 // ! Array slice
-var arr1 = ["value1", "value2"];
-var arr2 = ["value3", "value4", "value5"];
-var arr3 = ["value6", "value7"];
-var arr4 = ["value1", "value2", "value3", "value4", "value5"]
-var concatArr = arr1.concat(arr2, arr3); //? concat มีไว้รวม
-var myNewArr = arr4.slice(1, 3); //? เอาตั้งแต่ Index ที่ 1 ถึง 2
+// var arr1 = ["value1", "value2"];
+// var arr2 = ["value3", "value4", "value5"];
+// var arr3 = ["value6", "value7"];
+// var arr4 = ["value1", "value2", "value3", "value4", "value5"]
+// var concatArr = arr1.concat(arr2, arr3); //? concat มีไว้รวม
+// var myNewArr = arr4.slice(1, 3); //? เอาตั้งแต่ Index ที่ 1 ถึง 2
+
+// ! if else
+// var time = 15;
+// if(time < 12) {
+//     console.log("Good Morning");
+// } else if(time < 18) {
+//     console.log("Good Afternoon");
+// } else {
+//     console.log("Good Evening");
+// }
