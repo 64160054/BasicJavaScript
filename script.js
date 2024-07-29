@@ -232,23 +232,23 @@
 // console.log(myClass.hello("Paowaric"));
 
 // ! JS inheritance (การสืบทอดระหว่าง class)
-class Car {
-    constructor(brand) {
-        this.carname = brand;
-    }
-    present() {
-        return "I have a " + this.carname;
-    }
-}
+// class Car {
+//     constructor(brand) {
+//         this.carname = brand;
+//     }
+//     present() {
+//         return "I have a " + this.carname;
+//     }
+// }
 
-class Model extends Car {
-    constructor(brand, model) {
-        super(brand); //? super คือกา่รเรียก method constructor จาก class แม่ (Line 236) ซึ่งสามารถใช้ present() ได้เหมือนกัน
-        this.model = model;
-    }
-    show() {
-        return this.present() + ", it's a " + this.model;
-    }
-}
-var myCar = new Model("Ford", "Mustang");
-console.log(myCar.show());
+// class Model extends Car {
+//     constructor(brand, model) {
+//         super(brand); //? super คือกา่รเรียก method constructor จาก class แม่ (Line 236) ซึ่งสามารถใช้ present() ได้เหมือนกัน
+//         this.model = model;
+//     }
+//     show() {
+//         return this.present() + ", it's a " + this.model;
+//     }
+// }
+// var myCar = new Model("Ford", "Mustang");
+// console.log(myCar.show());
