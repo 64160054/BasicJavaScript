@@ -157,3 +157,13 @@
 // for(var i = 0; i < cars.length; i++) {
 //     console.log(cars[i]);
 // }
+
+// ! for in loop
+var person = {
+    fName: "Paowaric",
+    lName: "Vachiranantakul",
+    age: 21,
+};
+for(var x in person) {
+    console.log(person[x]);
+}
