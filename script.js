@@ -148,3 +148,12 @@
 //     default:
 //         console.log("We don't have this brand.");
 // }
+
+// ! for loop
+// for(var i = 0; i<10; i++) {
+//     console.log(i);
+// }
+// var cars = ["BMW", "Ford", "Honda", "Audi"];
+// for(var i = 0; i < cars.length; i++) {
+//     console.log(cars[i]);
+// }
