@@ -57,13 +57,17 @@
 
 // ! create Obj & use
 // TODO create method at fullname
-var person = {
-    firstName: "Paowaric",
-    lastName: "Vachiranantakul",
-    eyecolor: "black",
-    fullName: function() {
-        return this.firstName + " " + this.lastName;
-    }
-};
+// var person = {
+//     firstName: "Paowaric",
+//     lastName: "Vachiranantakul",
+//     eyecolor: "black",
+//     fullName: function() {
+//         return this.firstName + " " + this.lastName;
+//     }
+// };
+// console.log(person.fullName());
 
-console.log(person.fullName());
+// ! Events with btn
+// function displayDate() {
+//     document.getElementById("demo").innerHTML = Date();
+// }
