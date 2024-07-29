@@ -203,3 +203,10 @@
 //     console.log(`Hi ${name}`);
 // }
 // myFunction("Pao");
+
+// ! arrow function
+// //? var hello = function() {    
+// //?     return "Hello World"; 
+// //? } กลาบเป็นด้านล่าง
+// var hello = () => "Hello World";
+// console.log(hello());
