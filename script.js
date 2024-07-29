@@ -212,5 +212,21 @@
 // console.log(hello());
 
 // ! arrow function with parameter
-var hello = (value) => "Hello " + value; //? ถ้ามี parameter แค่ตัวเดียวสามารถลบ () ตรง value ออกได้เลย
-console.log(hello("Pao"));
+// var hello = (value) => "Hello " + value; //? ถ้ามี parameter แค่ตัวเดียวสามารถลบ () ตรง value ออกได้เลย
+// console.log(hello("Pao"));
+
+// ! JS Class
+class myClass {
+    constructor(name) {
+        this.myname = name;
+    }
+    fullName(greeting) { 
+        return greeting + " " + "My name is " + this.myname;
+    }
+    static hello(name) { //? static ต้องใช้ชื่อ class เพื่อเรียกใช้โดยตรง (line 232)
+        return "Hello! " + name;
+    }
+}
+var person = new myClass("Pao");
+console.log(person.fullName("Hi,"));
+console.log(myClass.hello("Paowaric"));
