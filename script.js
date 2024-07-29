@@ -195,3 +195,11 @@
 // const z = 4;
 // z = 5;
 // console.log(z); //? error ต้องเอา (z = 5;) ออก เพราะ const คือค่าคงที่ ประกาศได้แค่ครั้งเดียว
+
+// ! template str
+// var myName = "Paowaric";
+// console.log(`Hi, My name is ${myName} nice to meet you.`); //? window+esc to ``
+// function myFunction(name) {  //? แบบ function
+//     console.log(`Hi ${name}`);
+// }
+// myFunction("Pao");
