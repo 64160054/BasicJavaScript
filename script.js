@@ -1,17 +1,17 @@
 // ! ขึ้นใน Console ตอน F12
-// console.log('Hello World'); 
+// console.log('Hello World');
 
 // ! document(index.html) get id มาจาก p ชื่อว่า text และใช้ innerHTML เพื่อ set ค่าที่จะแสดง
-// document.getElementById('text').innerHTML = "Paowaric Vachiranantakul" 
+// document.getElementById('text').innerHTML = "Paowaric Vachiranantakul"
 
 // ! แสดงข้อความเหมือนกัน
-// document.write('Hello Document Write'); 
+// document.write('Hello Document Write');
 
 // ! ขึ้น Pop up กล่อง Alert ตอนเข้า test
-// window.alert('Hello Alert Box'); 
+// window.alert('Hello Alert Box');
 
-// ! สร้างตัวแปร var เสมอ 
-// var x = 5; 
+// ! สร้างตัวแปร var เสมอ
+// var x = 5;
 // var y = 6;
 // var z = x + y;
 // console.log(z);
@@ -31,7 +31,7 @@
 // }
 // console.log(myFunction(5, 5));
 
-// ! style background 
+// ! style background
 // function changeBg() {
 //     document.body.style.backgroundColor = "red";
 // }
@@ -41,7 +41,7 @@
 //     var cTemp = celsius;
 //     var cToFahr = cTemp * 9 / 5 + 32;
 //     var message = cTemp + "\xB0C is " + cToFahr + "\xB0F";
-//     console.log(message); 
+//     console.log(message);
 // }
 // cToF(30);
 
@@ -50,7 +50,7 @@
 //     var fTemp = fahrenheit;
 //     var fToCel = (fTemp - 32) * 5 / 9;
 //     var message = fTemp + "\xB0F is " + fToCel + "\xB0C";
-//     console.log(message); 
+//     console.log(message);
 // }
 // fToC(86);
 
@@ -75,7 +75,7 @@
 // var x = " It's me Paowaric \\ \"Pao\" \\ Vachiranantakul";
 // console.log(x);
 
-// ! Array Literal 
+// ! Array Literal
 // var myArr = ["BMW", "Ford", "Honda"];
 
 // console.log(myArr[0]);
@@ -84,7 +84,7 @@
 // var fruits = ["Banana", "Orange", "Apple", "Mango"];
 // document.getElementById("demo").innerHTML = fruits.toString();
 // document.getElementById("demo").innerHTML = fruits.join(" - ");
-// fruits.splice(2, 0, "Test1", "Test2"); //? เพิ่มตรง index ที่ 2 ว่า Test1 และ Test2 และไม่ต้องลบอะไรเลย (0) 
+// fruits.splice(2, 0, "Test1", "Test2"); //? เพิ่มตรง index ที่ 2 ว่า Test1 และ Test2 และไม่ต้องลบอะไรเลย (0)
 // fruits.splice(0, 3); //? ลบตรง index ที่ 0 เป็นต้นไป 3 ตัว ก็คือลบ Banana ถึง Apple
 // fruits.shift();           //? ลบหน้าสุด
 // fruits.unshift("Lemon"); //? เพิ่มหน้าสุด
@@ -185,7 +185,7 @@
 // var x; // ? declaration จะขึ้นไปห้อยด้านบนได้ (Hoisted)
 // var y = 10; // ? Initialization จะไม่ขึ้นไปห้อยด้านบน (Not Hoisted)
 
-// ! var & let & const 
+// ! var & let & const
 // var x = 0;
 // var x = 1;
 // console.log(x);
@@ -205,8 +205,8 @@
 // myFunction("Pao");
 
 // ! arrow function
-// //? var hello = function() {    
-// //?     return "Hello World"; 
+// //? var hello = function() {
+// //?     return "Hello World";
 // //? } กลาบเป็นด้านล่าง
 // var hello = () => "Hello World";
 // console.log(hello());
@@ -225,7 +225,7 @@
 //     constructor(name) {
 //         this.myname = name;
 //     }
-//     fullName(greeting) { 
+//     fullName(greeting) {
 //         return greeting + " " + "My name is " + this.myname;
 //     }
 //     static hello(name) { //? static ต้องใช้ชื่อ class เพื่อเรียกใช้โดยตรง (Line 232)
@@ -259,9 +259,41 @@
 // console.log(myCar.show());
 
 // ! Module export
-import { add, greet, name, person, arr } from './module.js';
-console.log(add(1,2));
-console.log(greet());
-console.log(name);
-console.log(person);
-console.log(arr);
+// import { add, greet, name, person, arr } from './module.js';
+// console.log(add(1,2));
+// console.log(greet());
+// console.log(name);
+// console.log(person);
+// console.log(arr);
+
+// ! Json
+const fetchAndDisplayUsers = () =>
+  fetch("https://jsonplaceholder.typicode.com/users")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok " + response.statusText);
+      }
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+      const usersContainer = document.getElementById("users-container");
+      usersContainer.innerHTML = ""; //? Clear any existing content(clear <dev>)
+
+      data.forEach(user => {
+        const userDiv = document.createElement("div"); //? สร้าง <div> ขึ้นมาอีกอัน
+        userDiv.innerHTML = `
+            <h2>${user.name}</h2>
+            <p><strong>Email : </strong>${user.email}</p>
+            <p><strong>Phone : </strong>${user.phone}</p>
+            <p><strong>Website : </strong>${user.website}</p>
+            <p><strong>Address : </strong>${user.address.city}, <strong>Zipcode : </strong>${user.address.zipcode}</p> 
+        `;
+        usersContainer.appendChild(userDiv);
+      })
+    })
+    .catch((error) => {
+      console.error("There was a problem with the fetch operation", error);
+    });
+
+    fetchAndDisplayUsers();
