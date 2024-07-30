@@ -257,3 +257,11 @@
 // }
 // var myCar = new Model("Ford", "Mustang");
 // console.log(myCar.show());
+
+// ! Module export
+import { add, greet, name, person, arr } from './module.js';
+console.log(add(1,2));
+console.log(greet());
+console.log(name);
+console.log(person);
+console.log(arr);
