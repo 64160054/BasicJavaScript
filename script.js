@@ -210,6 +210,11 @@
 // //? } กลาบเป็นด้านล่าง
 // var hello = () => "Hello World";
 // console.log(hello());
+// function add(a, b) {
+//     return a+b;
+//? } กลาบเป็นด้านล่าง
+// const add = (a, b) => a+b;
+// console.log(add(3, 4));
 
 // ! arrow function with parameter
 // var hello = (value) => "Hello " + value; //? ถ้ามี parameter แค่ตัวเดียวสามารถลบ () ตรง value ออกได้เลย
